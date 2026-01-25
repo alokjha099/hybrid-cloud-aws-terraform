@@ -1,0 +1,15 @@
+
+region="ap-south-1"
+project_name="2 tier architecture"
+vpc_cidr= "10.0.0.0/16"
+pub_sub_1a_cidr="10.0.1.0/24"
+pub_sub_2a_cidr="10.0.2.0/24"
+pri_sub_3a_cidr="10.0.3.0/24"
+pri_sub_4a_cidr="10.0.4.0/24"
+pri_sub_5a_cidr="10.0.5.0/24"
+pri_sub_6a_cidr="10.0.6.0/24"
+on_prem_cidr=192.168.10.0/24
+db_username="admin"
+db_password="alok-123"
+certificate_domain_name="this-is-the-default-certificate-name"
+additional_domain_name="www.tier2architecture.com"
