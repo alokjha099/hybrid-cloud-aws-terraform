@@ -1,5 +1,13 @@
 data "aws_route53_zone" "private_zone" {
   name = var.hosted_zone_name
+
+  vpc {
+    vpc_id = var.vpc_id
+  }
+
+  comment = "Private hosted zone for VPN-based access"
+}
+
 }
 
 resource "aws_route53_record" "alb_record" {
@@ -15,9 +23,3 @@ resource "aws_route53_record" "alb_record" {
 }
 
 
-  vpc {
-    vpc_id = var.vpc_id
-  }
-
-  comment = "Private hosted zone for VPN-based access"
-}
