@@ -11,7 +11,7 @@ resource "aws_vpc" "vpc" {
   }
 }
 
-resouce "aws_vpn_gateway" "vgw" {
+resource "aws_vpn_gateway" "vgw" {
       vpc_id=aws_vpc.main.id
 
       tags= {
