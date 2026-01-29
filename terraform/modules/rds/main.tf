@@ -27,7 +27,7 @@ resource "aws_db_instance" "db" {
 
   maintenance_window = "sun:02:00-sun:03:00"
 
-  vpc_security_group_ids = [var.db_sg_id] # Replace with your desired security group ID
+  vpc_security_group_ids = [var.db_sg_id] 
 
   db_subnet_group_name = aws_db_subnet_group.db-subnet.name
 
